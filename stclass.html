@@ -1,0 +1,165 @@
+
+<html >
+<head>
+   
+    <title>Unique Education</title>
+    <style>
+        
+
+        header {
+            background-image:"background.jpg";
+            padding: 5px;
+        }
+
+        header img {
+            max-width: 100px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        
+		.listup
+			{
+			font-size:25px;
+			font-family:fantasy;
+			float:right;
+			color:black;
+			}
+		body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+			
+        }
+		.sq
+			{
+			background-color:#9eb0f7 ;
+			width:1350px;
+			height:2px;
+			position: absolute;
+            top: 75px; 
+			}
+		#id05
+			{
+			font-size:30px;
+			font-family: fantasy;
+			color:#9eb0f7;
+			position: absolute;
+			top:-15px;
+			left:59;
+			
+			}
+		#id06
+			{
+			font-size:19px;
+			font-family: fantasy;
+			color:#9eb0f7;
+			position: absolute;
+            top: 30px; 
+			left:60px;
+			
+			}
+		.container {
+      max-width: 1000px;
+      margin: 50px auto;
+      text-align: center;
+	  padding:50px;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .button {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #6a4bc8;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+	nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav .active {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+			</style>
+	</head>
+	<body>
+	
+	<p id="id05">U N I Q U E</p>
+	<p id="id06">E D U C A T I O N</p>
+	<div class="sq">
+	</div>
+	
+    <header>
+        
+        <nav>
+            <ul class="listup">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+				<li><a href="stacademic.html">ACADEMIC</a></li>		
+                <li><a href="stclass.html"class="active">CLASSES</a></li>
+                <li><a href="notice.html">NOTICES</a></li>
+                <li><a href="stprofile.php">PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+    <div class="button-grid">
+      <button class="button">View Class Schedules</button>
+      <button class="button">Pay Class Fees</button>
+      <button class="button">View Exam Schedules</button>
+      <button class="button">Feedback to Teachers</button>
+      <button class="button">View Fee Payment Status</button>
+    </div>
+  </div>
+        
+    
+
+    
+</body>
+</html>

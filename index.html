@@ -1,0 +1,148 @@
+<html>
+	<head>
+	
+	<title>Unique Education</title>
+	<style>
+		
+		.img01
+			{
+			float:left;
+			margin:30px;
+			}
+		.right-panel {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .right-panel img {
+      width: 120px;
+      margin-bottom: 40px;
+	    float:width=1200; 
+      height:500;
+    }
+
+    .right-panel h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-group {
+      margin: 20px 0;
+    }
+
+    .form-group input {
+      width: 30%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 30%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #0056b3;
+    }
+
+    .forgot-password {
+      display: block;
+      margin: 10px 0;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+	.head01
+		{
+		font-size:30px;
+		font-family:arial Black;
+		font-weight:bold;
+		color:#1b4f72;
+		}
+	.head02
+		{
+		font-size:18px;
+		font-family:arial Black;
+		font-weight:bold;
+		color:#1b4f72;
+		}
+	.reg
+		{
+		color:white;
+		text-decoration:none;
+		}
+	
+	
+		
+		
+	</style>
+	
+	</head>
+	
+	<body>
+	
+		<img class="img01" src="final.jpg"width="px" align-things="middle" height="1050px">
+		
+	  <div class="right-panel">
+      <p ><img src="logo.jpg" alt="Unique Education Logo"></p>
+	  <P class="head01">UNIQUE EDUCATION </p>
+      <p class="head02">Learning Management System</p>
+      <div class="form-group">
+        <button ><a href="page02.html" class="reg"> New Registration</a></button>
+      </div>
+
+      <form method="POST" action="login.php" onsubmit="return validateLoginForm()">
+      <div class="form-group">
+        <input type="text" id="email" name="email" placeholder="E-mail">
+        <input type="password" id="password" name="password" placeholder="Password">
+      </div>
+      <p id="error-message" class="error"></p>
+      <a href="page07.html" class="forgot-password">Forgot Password?</a>
+      <div class="form-group">
+        <button type="submit" class="reg">
+          <!-- <a href="homepage.html" class="reg"> -->
+            Log in
+          <!-- </a> -->
+          </button>
+      </div>
+    </form>
+
+      <script>
+        function validateLoginForm() {
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const errorMessage = document.getElementById("error-message");
+
+            if (email === "" || password === "") {
+                errorMessage.textContent = "Both email and password are required.";
+                return false; 
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!emailRegex.test(email)) {
+              errorMessage.textContent = "Enter a valid email address";
+              return false;
+            }
+
+            return true; 
+        }
+    </script>
+
+	</body>
+
+
+</html>

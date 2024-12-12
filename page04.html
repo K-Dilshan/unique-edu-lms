@@ -1,0 +1,182 @@
+
+<html>
+<head>
+
+  <title>New Teacher Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: red;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      width: 48%;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .file-upload {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .file-upload button {
+      width: auto;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .file-upload button:hover {
+      background-color: #d32f2f;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 150px;
+      margin: 20px auto;
+      padding: 10px 0;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #1976d2;
+    }
+	.reg
+		{
+		color:white;
+		text-decoration:none;
+		}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpg" alt="Unique Education Logo" class="logo">
+    <h1>New Teacher Registration</h1>
+    <p class="subtitle">Please be kind to insert the correct details</p>
+
+    <form>
+      <div class="section-title">Personal Info</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Enter last name">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number</label>
+          <input type="tel" id="mobile-number" placeholder="Enter mobile number">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email address">
+        </div>
+      </div>
+		
+		<div class="form-row">
+      <div class="form-group">
+        <label for="nic-number">NIC Number</label>
+        <input type="text" id="nic-number" placeholder="Enter NIC number">
+      </div>
+	   <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="text" id="Password" placeholder="Enter Your Password">
+      </div>
+	  </div>
+
+      <div class="form-group">
+        <label for="cv-upload">Attach Your CV</label>
+        <div class="file-upload">
+          <input type="file" id="cv-upload" style="display:none">
+          <button type="button" onclick="document.getElementById('cv-upload').click()">Upload</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Enter description"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn"><a href="page06.html" class="reg">Submit</a></button>
+    </form>
+  </div>
+</body>
+</html>
